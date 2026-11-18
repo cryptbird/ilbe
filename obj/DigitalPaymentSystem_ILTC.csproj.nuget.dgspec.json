@@ -1,0 +1,143 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\_1048070\\GitRepos\\AgoraX (Digital Payment System)\\DigitalPaymentSystem_ILTC\\DigitalPaymentSystem_ILTC\\DigitalPaymentSystem_ILTC.csproj": {}
+  },
+  "projects": {
+    "D:\\_1048070\\GitRepos\\AgoraX (Digital Payment System)\\DigitalPaymentSystem_ILTC\\DigitalPaymentSystem_ILTC\\DigitalPaymentSystem_ILTC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\_1048070\\GitRepos\\AgoraX (Digital Payment System)\\DigitalPaymentSystem_ILTC\\DigitalPaymentSystem_ILTC\\DigitalPaymentSystem_ILTC.csproj",
+        "projectName": "DigitalPaymentSystem_ILTC",
+        "projectPath": "D:\\_1048070\\GitRepos\\AgoraX (Digital Payment System)\\DigitalPaymentSystem_ILTC\\DigitalPaymentSystem_ILTC\\DigitalPaymentSystem_ILTC.csproj",
+        "packagesPath": "C:\\Users\\1048070\\.nuget\\packages\\",
+        "outputPath": "D:\\_1048070\\GitRepos\\AgoraX (Digital Payment System)\\DigitalPaymentSystem_ILTC\\DigitalPaymentSystem_ILTC\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\1048070\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net10.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net10.0": {
+            "targetAlias": "net10.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net10.0": {
+          "targetAlias": "net10.0",
+          "dependencies": {
+            "AWSSDK.CloudWatchLogs": {
+              "target": "Package",
+              "version": "[4.0.7.7, )"
+            },
+            "AWSSDK.SecretsManager": {
+              "target": "Package",
+              "version": "[4.0.4.7, )"
+            },
+            "AspNetCoreRateLimit": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
+            "Fastenshtein": {
+              "target": "Package",
+              "version": "[1.0.11, )"
+            },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.8.22, )"
+            },
+            "Hangfire.AspNetCore": {
+              "target": "Package",
+              "version": "[1.8.22, )"
+            },
+            "Hangfire.PostgreSql": {
+              "target": "Package",
+              "version": "[1.20.12, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Oracle.ManagedDataAccess.Core": {
+              "target": "Package",
+              "version": "[23.9.1, )"
+            },
+            "Portable.BouncyCastle": {
+              "target": "Package",
+              "version": "[1.9.0, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[112.1.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.14.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.109/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

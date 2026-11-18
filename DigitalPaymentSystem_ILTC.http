@@ -1,0 +1,6 @@
+@DigitalPaymentSystem_ILTC_HostAddress = http://localhost:5247
+
+GET {{DigitalPaymentSystem_ILTC_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

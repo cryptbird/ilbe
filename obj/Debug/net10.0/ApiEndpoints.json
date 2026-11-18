@@ -1,0 +1,1430 @@
+[
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.TechOpsController",
+    "Method": "GetCurrentServerTime",
+    "RelativePath": "dps-agorax/api/GetCurrentServerTime",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.TechOpsController",
+    "Method": "Heartbeat",
+    "RelativePath": "dps-agorax/api/heartbeat",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.ILTCController",
+    "Method": "ILTCWizRequest",
+    "RelativePath": "dps-agorax/api/Policy/GetReqDocforPolicyCancellation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DigitalPaymentSystem_ILTC.Controllers.ILTCController\u002BTriggerWizRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.TechOpsController",
+    "Method": "TimeCheck",
+    "RelativePath": "dps-agorax/api/TimeCheck",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.DashboardController",
+    "Method": "AuthorizeHangfireAccess",
+    "RelativePath": "dps-agorax/api/v1/dashboard/AuthorizeHangfireAccess",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.DashboardController",
+    "Method": "ChangeTemplateActiveStatus",
+    "RelativePath": "dps-agorax/api/v1/dashboard/ChangeTemplateActiveStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "toggleTemplateStatusReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.DashboardModel\u002BToggleTemplateStatusReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.DashboardController",
+    "Method": "DashboardCheckProposalStatus",
+    "RelativePath": "dps-agorax/api/v1/dashboard/CheckProposalStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dashboardCheckProposalStatusReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.DashboardModel\u002BDashboardCheckProposalStatusReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.DashboardController",
+    "Method": "DashboardClearCase",
+    "RelativePath": "dps-agorax/api/v1/dashboard/ClearCase",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "retryResyncCase",
+        "Type": "DigitalPaymentSystem_ILTC.Models.RetryResyncModel\u002BRetryResyncCase",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.DashboardController",
+    "Method": "CreateTemplate",
+    "RelativePath": "dps-agorax/api/v1/dashboard/CreateTemplate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "createTemplateReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.DashboardModel\u002BCreateTemplateReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.DashboardController",
+    "Method": "CreateDashboardToken",
+    "RelativePath": "dps-agorax/api/v1/dashboard/CreateToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.DashboardController",
+    "Method": "DashboardDecryptData",
+    "RelativePath": "dps-agorax/api/v1/dashboard/DecryptData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dashboardDecryptDataReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.DashboardModel\u002BDashboardDecryptDataReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.DashboardController",
+    "Method": "DashboardEncryptData",
+    "RelativePath": "dps-agorax/api/v1/dashboard/EncryptData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dashboardEncryptDataReq",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.DashboardController",
+    "Method": "ExecuteRefresh",
+    "RelativePath": "dps-agorax/api/v1/dashboard/ExecuteRefresh",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "executeRefreshReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.DashboardModel\u002BExecuteRefreshReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.DashboardController",
+    "Method": "GetApplicationNames",
+    "RelativePath": "dps-agorax/api/v1/dashboard/GetApplicationNames",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.DashboardController",
+    "Method": "GetDatabaseTables",
+    "RelativePath": "dps-agorax/api/v1/dashboard/GetDatabaseTables",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.DashboardController",
+    "Method": "GetProductsList",
+    "RelativePath": "dps-agorax/api/v1/dashboard/GetProductsList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.DashboardController",
+    "Method": "GetTableColumns",
+    "RelativePath": "dps-agorax/api/v1/dashboard/GetTableColumns",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "getTableColumnsReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.DashboardModel\u002BGetTableColumnsReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.DashboardController",
+    "Method": "GetTemplateIdsByApplicationName",
+    "RelativePath": "dps-agorax/api/v1/dashboard/GetTemplateIds",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "getTemplateIdsReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.DashboardModel\u002BGetTemplateIdsReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.DashboardController",
+    "Method": "GetDashboardTransactionSummary",
+    "RelativePath": "dps-agorax/api/v1/dashboard/GetTransactionSummary",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "transactionSummaryReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.DashboardModel\u002BTransactionSummaryReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.DashboardController",
+    "Method": "DashboardLoginSendOtp",
+    "RelativePath": "dps-agorax/api/v1/dashboard/LoginSendOtp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dashboardLoginReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.DashboardModel\u002BDashboardLoginReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.DashboardController",
+    "Method": "DashboardLoginVerifyOtp",
+    "RelativePath": "dps-agorax/api/v1/dashboard/LoginVerifyOtp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dashboardLoginVerifyReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.DashboardModel\u002BDashboardLoginVerifyReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.DashboardController",
+    "Method": "DashboardOnboardUser",
+    "RelativePath": "dps-agorax/api/v1/dashboard/OnboardUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "onboardUserReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.DashboardModel\u002BDashboardOnboardUserReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.PaymentController",
+    "Method": "AddPaymentRequest",
+    "RelativePath": "dps-agorax/api/v1/pay/AddPaymentRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "addPaymentReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.PaymentModel\u002BAddPaymentReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.PennyDropController",
+    "Method": "AddPennyDropRequest",
+    "RelativePath": "dps-agorax/api/v1/pay/AddPennyDropRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pennyDropReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.PennyDropModel\u002BPennyDropReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.KafkaWebhookController",
+    "Method": "AsbaPaymentStatusWebhook",
+    "RelativePath": "dps-agorax/api/v1/pay/AsbaPaymentStatusWebhook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "asbaWebhookReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.AsbaWebhookReqModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DigitalPaymentSystem_ILTC.Models.AsbaWebhookRespModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.BreakInController",
+    "Method": "BreakInWebhook",
+    "RelativePath": "dps-agorax/api/v1/pay/BreakInWebhook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "breakInWebhookReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.BreakInModel\u002BBreakInWebhookReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.AlertsLogsController",
+    "Method": "CallAlert",
+    "RelativePath": "dps-agorax/api/v1/pay/CallAlert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "alertLogsReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.AlertLogsModel\u002BAlertLogsReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.CallbackController",
+    "Method": "CallbackWebhook",
+    "RelativePath": "dps-agorax/api/v1/pay/CallbackWebhook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "callbackRequest",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.OrderController",
+    "Method": "CaptureMandate",
+    "RelativePath": "dps-agorax/api/v1/pay/CaptureMandate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "captureMandateReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.CaptureMandateReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.CallbackController",
+    "Method": "ChannelApplicationOrderDetails",
+    "RelativePath": "dps-agorax/api/v1/pay/ChannelApplicationOrderDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "channelApplicationOrderDetailsReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.ChannelApplicationOrderDetailsReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DigitalPaymentSystem_ILTC.Models.PaymentModel\u002BDPSStatusResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.BreakInController",
+    "Method": "CheckBreakInStatus",
+    "RelativePath": "dps-agorax/api/v1/pay/CheckBreakInStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "breakInStatusReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.BreakInModel\u002BBreakInStatusReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.BreakInController",
+    "Method": "CreateBreakIn",
+    "RelativePath": "dps-agorax/api/v1/pay/CreateBreakIn",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "createBreakInReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.BreakInModel\u002BCreateBreakInReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.JourneyController",
+    "Method": "CreateProposal",
+    "RelativePath": "dps-agorax/api/v1/pay/CreateProposal",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DigitalPaymentSystem_ILTC.Models.JourneyModel\u002BCreateProposalRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.AuthenticateController",
+    "Method": "CreateAuthToken",
+    "RelativePath": "dps-agorax/api/v1/pay/CreateToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.DownloadPdfController",
+    "Method": "DownloadPolicyCertificate",
+    "RelativePath": "dps-agorax/api/v1/pay/DownloadPolicyCertificate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "AuthToken",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "request",
+        "Type": "DigitalPaymentSystem_ILTC.Models.DownloadPdfModel\u002BFetchPolicyDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.OrderController",
+    "Method": "FetchCrossSellingDetails",
+    "RelativePath": "dps-agorax/api/v1/pay/FetchCrossSellingDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fetchCrossSellingDetailsReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.FetchCrossSellingDetailsReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.OrderController",
+    "Method": "GetOrderStatus",
+    "RelativePath": "dps-agorax/api/v1/pay/FetchOrderStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fetchOrderStatusReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.FetchOrderStatusReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.PaymentController",
+    "Method": "FetchPaymentTransaction",
+    "RelativePath": "dps-agorax/api/v1/pay/FetchPaymentTransaction",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fetchPaymentReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.PaymentModel\u002BFetchPaymentReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.BreakInController",
+    "Method": "FetchPincodeDetails",
+    "RelativePath": "dps-agorax/api/v1/pay/FetchPincodeDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fetchPincodeDetailsReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.BreakInModel\u002BFetchPincodeDetailsReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.BreakInController",
+    "Method": "FetchPiSublocation",
+    "RelativePath": "dps-agorax/api/v1/pay/FetchPiSublocation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "piSublocationReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.BreakInModel\u002BPiSublocationReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.OrderController",
+    "Method": "FetchPolicyDetailsByID",
+    "RelativePath": "dps-agorax/api/v1/pay/FetchPolicyDetailsByID",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fetchPolicyDetailsByIDReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.FetchPolicyDetailsByIDReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.OrderController",
+    "Method": "FetchRedirectionUrl",
+    "RelativePath": "dps-agorax/api/v1/pay/FetchRedirectionUrl",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fetchRedirectionUrlReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.FetchRedirectionUrlReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.GAEventController",
+    "Method": "GAEvents",
+    "RelativePath": "dps-agorax/api/v1/pay/GAEvents",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "request",
+        "Type": "DigitalPaymentSystem_ILTC.Models.GAEventsModel\u002BGAEventRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.JourneyController",
+    "Method": "GenerateQuote",
+    "RelativePath": "dps-agorax/api/v1/pay/GenerateQuote",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DigitalPaymentSystem_ILTC.Models.JourneyModel\u002BQuoteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.PaymentController",
+    "Method": "GetAgentDetails",
+    "RelativePath": "dps-agorax/api/v1/pay/GetAgentDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "getAgentDetailsRequest",
+        "Type": "DigitalPaymentSystem_ILTC.Models.PaymentModel\u002BGetAgentDetailsRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.MiscController",
+    "Method": "GetFooterContent",
+    "RelativePath": "dps-agorax/api/v1/pay/GetFooterContent",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "request",
+        "Type": "DigitalPaymentSystem_ILTC.Models.MiscModel\u002BFooterContentRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.PaymentController",
+    "Method": "GetPaymentLink",
+    "RelativePath": "dps-agorax/api/v1/pay/GetPaymentLink",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fetchPaymentReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.PaymentModel\u002BFetchPaymentReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.DataLoaderController",
+    "Method": "HashRefresh",
+    "RelativePath": "dps-agorax/api/v1/pay/HashRefresh",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hashRefreshType",
+        "Type": "DigitalPaymentSystem_ILTC.Models.DataLoaderModel\u002BHashRefreshType",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.OrderController",
+    "Method": "ILEmiExecution",
+    "RelativePath": "dps-agorax/api/v1/pay/ILEmiExecution",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "iLEMISubsequentApiReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.ILEMIValidateInstallmentReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.RefundController",
+    "Method": "InitiateRefund",
+    "RelativePath": "dps-agorax/api/v1/pay/InitiateRefund",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "refundReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.RefundModel\u002BRefundReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.RetryResyncController",
+    "Method": "NSTPRetryResync",
+    "RelativePath": "dps-agorax/api/v1/pay/NSTPRetryResync",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DigitalPaymentSystem_ILTC.Models.PaymentModel\u002BDPSStatusResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.PlutusController",
+    "Method": "PlutusOrderStatus",
+    "RelativePath": "dps-agorax/api/v1/pay/PlutusOrderStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "plutusOrderStatusReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.PlutusModel\u002BPlutusOrderStatusReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.PlutusController",
+    "Method": "PlutusWebhook",
+    "RelativePath": "dps-agorax/api/v1/pay/PlutusWebhook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "plutusCallbackRequest",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.KafkaWebhookController",
+    "Method": "PolicyNumberStatusWebhook",
+    "RelativePath": "dps-agorax/api/v1/pay/PolicyNumberStatusWebhook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "policyNumberTopicReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.PolicyNumberTopicReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DigitalPaymentSystem_ILTC.Models.PolicyNumberTopicResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.RetryResyncController",
+    "Method": "GetPortingUpdate",
+    "RelativePath": "dps-agorax/api/v1/pay/PortingStatusUpdate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "retryResyncGetPortingUpdateReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.RetryResyncModel\u002BRetryResyncGetPortingUpdateReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.AuthenticateController",
+    "Method": "RefreshToken",
+    "RelativePath": "dps-agorax/api/v1/pay/RefreshToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RefreshAuthorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "request",
+        "Type": "DigitalPaymentSystem_ILTC.Models.AuthenticateModel\u002BRefreshTokenReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.RefundController",
+    "Method": "RefundSync",
+    "RelativePath": "dps-agorax/api/v1/pay/RefundSync",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.OrderController",
+    "Method": "RevokeMandate",
+    "RelativePath": "dps-agorax/api/v1/pay/RevokeMandate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "revokeMandateReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.RevokeMandateReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.PaymentController",
+    "Method": "SendPaymentLink",
+    "RelativePath": "dps-agorax/api/v1/pay/SendPaymentLink",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "sendPaymentLinkReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.PaymentModel\u002BSendPaymentLinkReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.DownloadPdfController",
+    "Method": "SendPolicyMail",
+    "RelativePath": "dps-agorax/api/v1/pay/SendPolicyMail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "sendPolicyMailReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.DownloadPdfModel\u002BSendPolicyMailReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.OrderController",
+    "Method": "Session",
+    "RelativePath": "dps-agorax/api/v1/pay/Session",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "sessionReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.SessionReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.DropLeadController",
+    "Method": "SmeDropLead",
+    "RelativePath": "dps-agorax/api/v1/pay/SmeDropLead",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "request",
+        "Type": "DigitalPaymentSystem_ILTC.Models.DropLeadModels\u002BDropLeadRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.RetryResyncController",
+    "Method": "STPRetryResync",
+    "RelativePath": "dps-agorax/api/v1/pay/STPRetryResync",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DigitalPaymentSystem_ILTC.Models.PaymentModel\u002BDPSStatusResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.PaymentController",
+    "Method": "TagProposal",
+    "RelativePath": "dps-agorax/api/v1/pay/TagProposal",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "tagProposalReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.PaymentModel\u002BTagProposalReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.CallbackController",
+    "Method": "CallbackWebhook2",
+    "RelativePath": "dps-agorax/api/v1/pay/TestingWebhook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "abc",
+        "Type": "DigitalPaymentSystem_ILTC.Models.TestingWebhookReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.CallbackController",
+    "Method": "WebhookFallback",
+    "RelativePath": "dps-agorax/api/v1/pay/WebhookFallback",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.PaymentController",
+    "Method": "AddPaymentRequestv2",
+    "RelativePath": "dps-agorax/api/v2/pay/AddPaymentRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "addPaymentReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.PaymentModel\u002BAddPaymentReqv2",
+        "IsRequired": true
+      },
+      {
+        "Name": "CorelationId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.AuthenticateController",
+    "Method": "CreateAuthTokenv2",
+    "RelativePath": "dps-agorax/api/v2/pay/CreateToken",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.DownloadPdfController",
+    "Method": "DownloadPolicyCertificatev2",
+    "RelativePath": "dps-agorax/api/v2/pay/DownloadPolicyCertificate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "proposalNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.PaymentController",
+    "Method": "TagProposalv2",
+    "RelativePath": "dps-agorax/api/v2/pay/TagProposal",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "tagProposalReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.PaymentModel\u002BTagProposalReqv2",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalPaymentSystem_ILTC.Controllers.PaymentController",
+    "Method": "TagProposalv3",
+    "RelativePath": "dps-agorax/api/v3/pay/TagProposal",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "tagProposalReq",
+        "Type": "DigitalPaymentSystem_ILTC.Models.PaymentModel\u002BTagProposalReqv3",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,3663 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "DigitalPaymentSystem_ILTC",
+    "version": "1.0"
+  },
+  "paths": {
+    "/dps-agorax/api/v1/pay/CallAlert": {
+      "post": {
+        "tags": [
+          "AlertsLogs"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlertLogsReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlertLogsReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlertLogsReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/CreateToken": {
+      "post": {
+        "tags": [
+          "Authenticate"
+        ],
+        "parameters": [
+          {
+            "name": "Username",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Password",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v2/pay/CreateToken": {
+      "get": {
+        "tags": [
+          "Authenticate"
+        ],
+        "parameters": [
+          {
+            "name": "Username",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Password",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/CreateBreakIn": {
+      "post": {
+        "tags": [
+          "BreakIn"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBreakInReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBreakInReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBreakInReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/BreakInWebhook": {
+      "post": {
+        "tags": [
+          "BreakIn"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BreakInWebhookReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BreakInWebhookReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BreakInWebhookReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/CheckBreakInStatus": {
+      "post": {
+        "tags": [
+          "BreakIn"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BreakInStatusReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BreakInStatusReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BreakInStatusReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/FetchPiSublocation": {
+      "post": {
+        "tags": [
+          "BreakIn"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PiSublocationReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PiSublocationReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PiSublocationReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/FetchPincodeDetails": {
+      "post": {
+        "tags": [
+          "BreakIn"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchPincodeDetailsReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchPincodeDetailsReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchPincodeDetailsReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/CallbackWebhook": {
+      "post": {
+        "tags": [
+          "Callback"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/TestingWebhook": {
+      "post": {
+        "tags": [
+          "Callback"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/WebhookFallback": {
+      "post": {
+        "tags": [
+          "Callback"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/ChannelApplicationOrderDetails": {
+      "post": {
+        "tags": [
+          "Callback"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChannelApplicationOrderDetailsReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChannelApplicationOrderDetailsReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChannelApplicationOrderDetailsReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DPSStatusResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DPSStatusResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DPSStatusResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/dashboard/CreateToken": {
+      "post": {
+        "tags": [
+          "Dashboard"
+        ],
+        "parameters": [
+          {
+            "name": "Email",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/dashboard/LoginSendOtp": {
+      "post": {
+        "tags": [
+          "Dashboard"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DashboardLoginReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DashboardLoginReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DashboardLoginReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/dashboard/LoginVerifyOtp": {
+      "post": {
+        "tags": [
+          "Dashboard"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DashboardLoginVerifyReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DashboardLoginVerifyReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DashboardLoginVerifyReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/dashboard/GetTransactionSummary": {
+      "post": {
+        "tags": [
+          "Dashboard"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransactionSummaryReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransactionSummaryReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransactionSummaryReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/dashboard/ClearCase": {
+      "post": {
+        "tags": [
+          "Dashboard"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RetryResyncCase"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RetryResyncCase"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RetryResyncCase"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/dashboard/CheckProposalStatus": {
+      "post": {
+        "tags": [
+          "Dashboard"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DashboardCheckProposalStatusReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DashboardCheckProposalStatusReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DashboardCheckProposalStatusReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/dashboard/EncryptData": {
+      "post": {
+        "tags": [
+          "Dashboard"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/dashboard/DecryptData": {
+      "post": {
+        "tags": [
+          "Dashboard"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DashboardDecryptDataReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DashboardDecryptDataReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DashboardDecryptDataReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/dashboard/GetDatabaseTables": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/dashboard/GetTableColumns": {
+      "post": {
+        "tags": [
+          "Dashboard"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetTableColumnsReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetTableColumnsReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetTableColumnsReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/dashboard/OnboardUser": {
+      "post": {
+        "tags": [
+          "Dashboard"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DashboardOnboardUserReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DashboardOnboardUserReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DashboardOnboardUserReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/dashboard/GetApplicationNames": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/dashboard/GetTemplateIds": {
+      "post": {
+        "tags": [
+          "Dashboard"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetTemplateIdsReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetTemplateIdsReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetTemplateIdsReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/dashboard/ChangeTemplateActiveStatus": {
+      "post": {
+        "tags": [
+          "Dashboard"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ToggleTemplateStatusReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ToggleTemplateStatusReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ToggleTemplateStatusReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/dashboard/GetProductsList": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/dashboard/CreateTemplate": {
+      "post": {
+        "tags": [
+          "Dashboard"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTemplateReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTemplateReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTemplateReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/dashboard/AuthorizeHangfireAccess": {
+      "post": {
+        "tags": [
+          "Dashboard"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/dashboard/ExecuteRefresh": {
+      "post": {
+        "tags": [
+          "Dashboard"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExecuteRefreshReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExecuteRefreshReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExecuteRefreshReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/HashRefresh": {
+      "post": {
+        "tags": [
+          "DataLoader"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HashRefreshType"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HashRefreshType"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/HashRefreshType"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/DownloadPolicyCertificate": {
+      "post": {
+        "tags": [
+          "DownloadPdf"
+        ],
+        "parameters": [
+          {
+            "name": "AuthToken",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchPolicyDetails"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchPolicyDetails"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchPolicyDetails"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/SendPolicyMail": {
+      "post": {
+        "tags": [
+          "DownloadPdf"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendPolicyMailReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendPolicyMailReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendPolicyMailReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v2/pay/DownloadPolicyCertificate": {
+      "get": {
+        "tags": [
+          "DownloadPdf"
+        ],
+        "parameters": [
+          {
+            "name": "proposalNumber",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/SmeDropLead": {
+      "post": {
+        "tags": [
+          "DropLead"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DropLeadRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DropLeadRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DropLeadRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/GAEvents": {
+      "post": {
+        "tags": [
+          "GAEvent"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GAEventRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GAEventRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GAEventRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/Policy/GetReqDocforPolicyCancellation": {
+      "post": {
+        "tags": [
+          "ILTC"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TriggerWizRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TriggerWizRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TriggerWizRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/GenerateQuote": {
+      "post": {
+        "tags": [
+          "Journey"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QuoteRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QuoteRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/QuoteRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/CreateProposal": {
+      "post": {
+        "tags": [
+          "Journey"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateProposalRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateProposalRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateProposalRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/AsbaPaymentStatusWebhook": {
+      "post": {
+        "tags": [
+          "KafkaWebhook"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsbaWebhookReqModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsbaWebhookReqModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsbaWebhookReqModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AsbaWebhookRespModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AsbaWebhookRespModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AsbaWebhookRespModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/PolicyNumberStatusWebhook": {
+      "post": {
+        "tags": [
+          "KafkaWebhook"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PolicyNumberTopicReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PolicyNumberTopicReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PolicyNumberTopicReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PolicyNumberTopicResp"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PolicyNumberTopicResp"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PolicyNumberTopicResp"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/Session": {
+      "post": {
+        "tags": [
+          "Order"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SessionReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SessionReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SessionReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/FetchOrderStatus": {
+      "post": {
+        "tags": [
+          "Order"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchOrderStatusReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchOrderStatusReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchOrderStatusReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/FetchRedirectionUrl": {
+      "post": {
+        "tags": [
+          "Order"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchRedirectionUrlReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchRedirectionUrlReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchRedirectionUrlReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/FetchPolicyDetailsByID": {
+      "post": {
+        "tags": [
+          "Order"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchPolicyDetailsByIDReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchPolicyDetailsByIDReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchPolicyDetailsByIDReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/CaptureMandate": {
+      "post": {
+        "tags": [
+          "Order"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CaptureMandateReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CaptureMandateReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CaptureMandateReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/RevokeMandate": {
+      "post": {
+        "tags": [
+          "Order"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RevokeMandateReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RevokeMandateReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RevokeMandateReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/FetchCrossSellingDetails": {
+      "post": {
+        "tags": [
+          "Order"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchCrossSellingDetailsReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchCrossSellingDetailsReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchCrossSellingDetailsReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/ILEMISubsequentApi": {
+      "post": {
+        "tags": [
+          "Order"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ILEMIValidateInstallmentReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ILEMIValidateInstallmentReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ILEMIValidateInstallmentReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/GetApiFactoryToken": {
+      "post": {
+        "tags": [
+          "Order"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/AddPaymentRequest": {
+      "post": {
+        "tags": [
+          "Payment"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddPaymentReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddPaymentReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddPaymentReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v2/pay/AddPaymentRequest": {
+      "post": {
+        "tags": [
+          "Payment"
+        ],
+        "parameters": [
+          {
+            "name": "CorelationId",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddPaymentReqv2"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddPaymentReqv2"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddPaymentReqv2"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/FetchPaymentTransaction": {
+      "post": {
+        "tags": [
+          "Payment"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchPaymentReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchPaymentReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchPaymentReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/TagProposal": {
+      "post": {
+        "tags": [
+          "Payment"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TagProposalReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TagProposalReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TagProposalReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/GetSendPaymentLinkData": {
+      "post": {
+        "tags": [
+          "Payment"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetSendPaymentLinkDataReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetSendPaymentLinkDataReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetSendPaymentLinkDataReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/SendPaymentLink": {
+      "post": {
+        "tags": [
+          "Payment"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendPaymentLinkReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendPaymentLinkReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendPaymentLinkReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/GetPaymentLink": {
+      "post": {
+        "tags": [
+          "Payment"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchPaymentReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchPaymentReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchPaymentReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v2/pay/TagProposal": {
+      "post": {
+        "tags": [
+          "Payment"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TagProposalReqv2"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TagProposalReqv2"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TagProposalReqv2"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/AddPennyDropRequest": {
+      "post": {
+        "tags": [
+          "PennyDrop"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PennyDropReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PennyDropReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PennyDropReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/PlutusOrderStatus": {
+      "post": {
+        "tags": [
+          "Plutus"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlutusOrderStatusReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlutusOrderStatusReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlutusOrderStatusReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/PlutusWebhook": {
+      "post": {
+        "tags": [
+          "Plutus"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/RefundSync": {
+      "post": {
+        "tags": [
+          "Refund"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/InitiateRefund": {
+      "post": {
+        "tags": [
+          "Refund"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RefundReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RefundReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RefundReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/STPRetryResync": {
+      "post": {
+        "tags": [
+          "RetryResync"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DPSStatusResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DPSStatusResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DPSStatusResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/NSTPRetryResync": {
+      "post": {
+        "tags": [
+          "RetryResync"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DPSStatusResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DPSStatusResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DPSStatusResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/v1/pay/PortingStatusUpdate": {
+      "post": {
+        "tags": [
+          "RetryResync"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RetryResyncGetPortingUpdateReq"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RetryResyncGetPortingUpdateReq"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RetryResyncGetPortingUpdateReq"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/heartbeat": {
+      "get": {
+        "tags": [
+          "TechOps"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/GetCurrentServerTime": {
+      "get": {
+        "tags": [
+          "TechOps"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dps-agorax/api/TimeCheck": {
+      "get": {
+        "tags": [
+          "TechOps"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AddPaymentReq": {
+        "required": [
+          "core",
+          "email",
+          "mobileNumber",
+          "name",
+          "product",
+          "templateID",
+          "totalAmount"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "email": {
+            "minLength": 1,
+            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+            "type": "string"
+          },
+          "mobileNumber": {
+            "minLength": 1,
+            "pattern": "^\\d{1,19}$",
+            "type": "string"
+          },
+          "totalAmount": {
+            "minLength": 1,
+            "pattern": "^\\d{1,19}(\\.\\d{1,2})?$",
+            "type": "string"
+          },
+          "payerType": {
+            "pattern": "^(?i)(I|C)$",
+            "type": "string",
+            "nullable": true
+          },
+          "product": {
+            "minLength": 1,
+            "pattern": "^(?i)(HEALTH|HOME|MOTOR|TRAVEL|SME)_(?:[1-9]|1[0-9]|20)$",
+            "type": "string"
+          },
+          "journeyType": {
+            "pattern": "^(?i)(POLICY|ENDORSEMENT|ADVANCE|NC_EMI|CL_EMI|IL_EMI|ONLY_EMI|ASBA|AUTOMANDATE)$",
+            "type": "string",
+            "nullable": true
+          },
+          "core": {
+            "minLength": 1,
+            "pattern": "^(?i)(PF|ARTEMIS)$",
+            "type": "string"
+          },
+          "sendPaymentLink": {
+            "pattern": "^[A-Za-z|]+$",
+            "type": "string",
+            "nullable": true
+          },
+          "templateID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "proposalList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProposalList"
+            },
+            "nullable": true
+          },
+          "proposalStartDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "is_mobile_user": {
+            "type": "boolean"
+          },
+          "channel_application_details": { },
+          "gateway_params": {
+            "$ref": "#/components/schemas/GatewayParams"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AddPaymentReqv2": {
+        "required": [
+          "paymentFilters",
+          "product",
+          "totalAmount"
+        ],
+        "type": "object",
+        "properties": {
+          "totalAmount": {
+            "minLength": 1,
+            "pattern": "^\\d{1,19}(\\.\\d{1,2})?$",
+            "type": "string"
+          },
+          "payerType": {
+            "pattern": "^(?i)(I|C)$",
+            "type": "string",
+            "nullable": true
+          },
+          "product": {
+            "minLength": 1,
+            "pattern": "^(?i)(?:(?:HEALTH|HOME|MOTOR|TRAVEL|SME)_(?:[1-9]|[12][0-9]|30)|(?:PAW|EMISURAKSHA|MOBILEINSURANCE|EXW))$",
+            "type": "string"
+          },
+          "journeyType": {
+            "pattern": "^(?i)(FRESH|RENEWAL|ENDORSEMENT|ADVANCE)$",
+            "type": "string",
+            "nullable": true
+          },
+          "isMobileUser": {
+            "type": "boolean"
+          },
+          "rid": {
+            "type": "string",
+            "nullable": true
+          },
+          "channelApplicationDetails": { },
+          "paymentFilters": {
+            "$ref": "#/components/schemas/PaymentFilters"
+          },
+          "emiDetails": {
+            "$ref": "#/components/schemas/emiDetails"
+          },
+          "proposalList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProposalListv2"
+            },
+            "nullable": true
+          },
+          "platform": {
+            "type": "string",
+            "nullable": true
+          },
+          "isHeaderReq": {
+            "type": "boolean"
+          },
+          "isFooterReq": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AdditionalCover": {
+        "type": "object",
+        "properties": {
+          "coverName": {
+            "type": "string",
+            "nullable": true
+          },
+          "coverAmount": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AlertLogsReq": {
+        "type": "object",
+        "properties": {
+          "alert_event": {
+            "type": "string",
+            "nullable": true
+          },
+          "alert_attachment": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/JsonNode"
+            },
+            "nullable": true
+          },
+          "alert_type": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AsbaWebhookReqModel": {
+        "type": "object",
+        "properties": {
+          "p1": {
+            "type": "string",
+            "nullable": true
+          },
+          "p2": {
+            "type": "string",
+            "nullable": true
+          },
+          "issuanceSystem": {
+            "type": "string",
+            "nullable": true
+          },
+          "retainAmount": {
+            "type": "number",
+            "format": "double"
+          },
+          "refundAmount": {
+            "type": "number",
+            "format": "double"
+          },
+          "pid": {
+            "type": "string",
+            "nullable": true
+          },
+          "mandateID": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AsbaWebhookRespModel": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "errorMessage": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BreakInStatusReq": {
+        "required": [
+          "breakInId"
+        ],
+        "type": "object",
+        "properties": {
+          "breakInId": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "BreakInWebhookReq": {
+        "type": "object",
+        "properties": {
+          "breakInId": {
+            "type": "string",
+            "nullable": true
+          },
+          "modeofInspection": {
+            "type": "string",
+            "nullable": true
+          },
+          "inspectionDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "breakinStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "chassisNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "engineNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "vehicleRegistrationNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "remarks": {
+            "type": "string",
+            "nullable": true
+          },
+          "surveyorName": {
+            "type": "string",
+            "nullable": true
+          },
+          "reasonForRejection": {
+            "type": "string",
+            "nullable": true
+          },
+          "reasonForClosure": {
+            "type": "string",
+            "nullable": true
+          },
+          "corelationId": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CaptureMandateReq": {
+        "type": "object",
+        "properties": {
+          "order_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "mandate_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "amount": {
+            "type": "string",
+            "nullable": true
+          },
+          "customer_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "mandate_execution_date": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "application_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "transaction_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "trace_id": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChannelApplicationOrderDetailsReq": {
+        "required": [
+          "transaction_id"
+        ],
+        "type": "object",
+        "properties": {
+          "transaction_id": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateBreakInReq": {
+        "required": [
+          "id",
+          "inspection_type"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "inspection_type": {
+            "minLength": 1,
+            "pattern": "^(?i)(PI|SI)$",
+            "type": "string"
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "state": {
+            "type": "string",
+            "nullable": true
+          },
+          "pincode": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateProposalRequest": {
+        "type": "object",
+        "properties": {
+          "quoteId": {
+            "type": "string",
+            "nullable": true
+          },
+          "tenure": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "selectedTenurePremium": {
+            "type": "number",
+            "format": "double"
+          },
+          "additionalCovers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AdditionalCover"
+            },
+            "nullable": true
+          },
+          "customerDOB": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "customerAddress": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateTemplateReq": {
+        "required": [
+          "application_name",
+          "is_active",
+          "product"
+        ],
+        "type": "object",
+        "properties": {
+          "application_name": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "product": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "upi": {
+            "maximum": 2147483647,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32"
+          },
+          "credit": {
+            "maximum": 2147483647,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32"
+          },
+          "debit": {
+            "maximum": 2147483647,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32"
+          },
+          "netbanking": {
+            "maximum": 2147483647,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32"
+          },
+          "wallet": {
+            "maximum": 2147483647,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32"
+          },
+          "bima_asba": {
+            "maximum": 2147483647,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32"
+          },
+          "emi": {
+            "maximum": 2147483647,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32"
+          },
+          "is_active": {
+            "maximum": 1,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DPSStatusResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "statusMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "traceId": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DashboardCheckProposalStatusReq": {
+        "type": "object",
+        "properties": {
+          "trace_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "proposal_number": {
+            "type": "string",
+            "nullable": true
+          },
+          "core": {
+            "type": "string",
+            "nullable": true
+          },
+          "deal_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "intermediary_code": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DashboardDecryptDataReq": {
+        "type": "object",
+        "properties": {
+          "encryptedData": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DashboardLoginReq": {
+        "required": [
+          "email"
+        ],
+        "type": "object",
+        "properties": {
+          "email": {
+            "minLength": 1,
+            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DashboardLoginVerifyReq": {
+        "required": [
+          "email",
+          "otp"
+        ],
+        "type": "object",
+        "properties": {
+          "email": {
+            "minLength": 1,
+            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+            "type": "string"
+          },
+          "otp": {
+            "minLength": 1,
+            "pattern": "^\\d{6}$",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DashboardOnboardUserReq": {
+        "required": [
+          "application_id",
+          "application_name",
+          "artemis_mid",
+          "juspay_mid",
+          "pf_mid",
+          "reverse_sync_url"
+        ],
+        "type": "object",
+        "properties": {
+          "application_name": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "application_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "pf_mid": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "artemis_mid": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "juspay_mid": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "reverse_sync_url": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DropLeadRequest": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExecuteRefreshReq": {
+        "required": [
+          "cache",
+          "email"
+        ],
+        "type": "object",
+        "properties": {
+          "email": {
+            "minLength": 1,
+            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+            "type": "string"
+          },
+          "cache": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FetchCrossSellingDetailsReq": {
+        "required": [
+          "id",
+          "product"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "product": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FetchOrderStatusReq": {
+        "required": [
+          "dps_order_id",
+          "trace_id"
+        ],
+        "type": "object",
+        "properties": {
+          "dps_order_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "trace_id": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FetchPaymentReq": {
+        "required": [
+          "id"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "is_landing_page": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FetchPincodeDetailsReq": {
+        "required": [
+          "id",
+          "pincode"
+        ],
+        "type": "object",
+        "properties": {
+          "pincode": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "id": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FetchPolicyDetails": {
+        "type": "object",
+        "properties": {
+          "proposalNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "id": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FetchPolicyDetailsByIDReq": {
+        "required": [
+          "id"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FetchRedirectionUrlReq": {
+        "required": [
+          "id",
+          "pg_id"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "pg_id": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GAEventRequest": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "product_value": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GatewayParams": {
+        "type": "object",
+        "properties": {
+          "juspay_udf1": {
+            "type": "string",
+            "nullable": true
+          },
+          "juspay_udf2": {
+            "type": "string",
+            "nullable": true
+          },
+          "juspay_udf3": {
+            "type": "string",
+            "nullable": true
+          },
+          "juspay_udf4": {
+            "type": "string",
+            "nullable": true
+          },
+          "juspay_udf5": {
+            "type": "string",
+            "nullable": true
+          },
+          "juspay_udf6": {
+            "type": "string",
+            "nullable": true
+          },
+          "juspay_udf7": {
+            "type": "string",
+            "nullable": true
+          },
+          "juspay_udf8": {
+            "type": "string",
+            "nullable": true
+          },
+          "juspay_udf9": {
+            "type": "string",
+            "nullable": true
+          },
+          "juspay_udf10": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetSendPaymentLinkDataReq": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetTableColumnsReq": {
+        "required": [
+          "table_name"
+        ],
+        "type": "object",
+        "properties": {
+          "table_name": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetTemplateIdsReq": {
+        "required": [
+          "application_name"
+        ],
+        "type": "object",
+        "properties": {
+          "application_name": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "HashRefreshType": {
+        "required": [
+          "refreshType"
+        ],
+        "type": "object",
+        "properties": {
+          "refreshType": {
+            "minLength": 1,
+            "pattern": "(?i)(data-master|db-queries-master)$",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ILEMIValidateInstallmentReq": {
+        "type": "object",
+        "properties": {
+          "transaction_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "trace_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "proposal_number": {
+            "type": "string",
+            "nullable": true
+          },
+          "policy_number": {
+            "type": "string",
+            "nullable": true
+          },
+          "installment_number": {
+            "pattern": "^(1[0-2]|[1-9])$",
+            "type": "string",
+            "nullable": true
+          },
+          "application_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "amount": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "JsonNode": {
+        "type": "object",
+        "properties": {
+          "options": {
+            "$ref": "#/components/schemas/JsonNodeOptions"
+          },
+          "parent": {
+            "$ref": "#/components/schemas/JsonNode"
+          },
+          "root": {
+            "$ref": "#/components/schemas/JsonNode"
+          }
+        },
+        "additionalProperties": false
+      },
+      "JsonNodeOptions": {
+        "type": "object",
+        "properties": {
+          "propertyNameCaseInsensitive": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PaymentFilters": {
+        "type": "object",
+        "properties": {
+          "upi": {
+            "type": "boolean"
+          },
+          "netBanking": {
+            "type": "boolean"
+          },
+          "creditCard": {
+            "type": "boolean"
+          },
+          "debitCard": {
+            "type": "boolean"
+          },
+          "wallet": {
+            "type": "boolean"
+          },
+          "noCostEMI": {
+            "type": "boolean"
+          },
+          "standardEMI": {
+            "type": "boolean"
+          },
+          "cardlessEMI": {
+            "type": "boolean"
+          },
+          "bimaAsba": {
+            "type": "boolean"
+          },
+          "ilemi": {
+            "type": "boolean"
+          },
+          "autopay": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PennyDropReq": {
+        "type": "object",
+        "properties": {
+          "bank_account_number": {
+            "type": "string",
+            "nullable": true
+          },
+          "bank_ifsc_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "bank_account_holder_name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PiSublocationReq": {
+        "required": [
+          "sublocation"
+        ],
+        "type": "object",
+        "properties": {
+          "sublocation": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PlutusOrderStatusReq": {
+        "type": "object",
+        "properties": {
+          "trace_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "order_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "dps_order_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "transaction_id": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PolicyNumberTopicReq": {
+        "type": "object",
+        "properties": {
+          "proposalNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "policyStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "policySubStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "policyNo": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PolicyNumberTopicResp": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "errorMessage": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProposalList": {
+        "type": "object",
+        "properties": {
+          "dealId": {
+            "type": "string",
+            "nullable": true
+          },
+          "customerId": {
+            "type": "string",
+            "nullable": true
+          },
+          "intermediaryCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "proposalNumber": {
+            "pattern": "^[a-zA-Z0-9-]{7,25}$",
+            "type": "string",
+            "nullable": true
+          },
+          "proposalAmount": {
+            "pattern": "^\\d{1,19}(\\.\\d{1,2})?$",
+            "type": "string",
+            "nullable": true
+          },
+          "proposalStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "userID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "is_nstp_flow": {
+            "type": "string",
+            "nullable": true
+          },
+          "is_breakin_req": {
+            "type": "string",
+            "nullable": true
+          },
+          "business_vertical": {
+            "type": "string",
+            "nullable": true
+          },
+          "sub_vertical": {
+            "type": "string",
+            "nullable": true
+          },
+          "marketing_officer": {
+            "type": "string",
+            "nullable": true
+          },
+          "proposer_code": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProposalListv2": {
+        "type": "object",
+        "properties": {
+          "proposalNumber": {
+            "pattern": "^[a-zA-Z0-9-]{7,25}$",
+            "type": "string",
+            "nullable": true
+          },
+          "proposalAmount": {
+            "pattern": "^\\d{1,19}(\\.\\d{1,2})?$",
+            "type": "string",
+            "nullable": true
+          },
+          "proposalId": {
+            "type": "string",
+            "nullable": true
+          },
+          "proposalType": {
+            "type": "string",
+            "nullable": true
+          },
+          "core": {
+            "pattern": "^(?i)(PF|ARTEMIS)$",
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "QuoteRequest": {
+        "type": "object",
+        "properties": {
+          "homeType": {
+            "type": "string",
+            "nullable": true
+          },
+          "mobileNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "emailId": {
+            "type": "string",
+            "nullable": true
+          },
+          "pincode": {
+            "type": "string",
+            "nullable": true
+          },
+          "coverageType": {
+            "type": "string",
+            "nullable": true
+          },
+          "carpetArea": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "costOfConstruction": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RefundReq": {
+        "type": "object",
+        "properties": {
+          "proposal_number": {
+            "type": "string",
+            "nullable": true
+          },
+          "auth_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "policy_number": {
+            "type": "string",
+            "nullable": true
+          },
+          "proposal_amount": {
+            "type": "string",
+            "nullable": true
+          },
+          "canc_proposal_number": {
+            "type": "string",
+            "nullable": true
+          },
+          "transaction_id": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RetryResyncCase": {
+        "type": "object",
+        "properties": {
+          "transaction_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "trace_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "total_amount": {
+            "type": "string",
+            "nullable": true
+          },
+          "application_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "product": {
+            "type": "string",
+            "nullable": true
+          },
+          "core": {
+            "type": "string",
+            "nullable": true
+          },
+          "proposal_number": {
+            "type": "string",
+            "nullable": true
+          },
+          "proposal_amount": {
+            "type": "number",
+            "format": "double"
+          },
+          "transaction_initiation_time": {
+            "type": "string",
+            "nullable": true
+          },
+          "proposal_status": {
+            "type": "string",
+            "nullable": true
+          },
+          "dps_order_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "order_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "auth_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "payment_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "policy_number": {
+            "type": "string",
+            "nullable": true
+          },
+          "no_of_attempts": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "payment_success_time": {
+            "type": "string",
+            "nullable": true
+          },
+          "payment_mode": {
+            "type": "string",
+            "nullable": true
+          },
+          "resync_status": {
+            "type": "string",
+            "nullable": true
+          },
+          "proposal_start_date": {
+            "type": "string",
+            "nullable": true
+          },
+          "deal_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "intermediary_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "customer_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "mobile_number": {
+            "type": "string",
+            "nullable": true
+          },
+          "payer_type": {
+            "type": "string",
+            "nullable": true
+          },
+          "breakin_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "breakin_status": {
+            "type": "string",
+            "nullable": true
+          },
+          "breakin_remark": {
+            "type": "string",
+            "nullable": true
+          },
+          "breakin_inspection_type": {
+            "type": "string",
+            "nullable": true
+          },
+          "breakin_inspection_date": {
+            "type": "string",
+            "nullable": true
+          },
+          "breakin_address": {
+            "type": "string",
+            "nullable": true
+          },
+          "breakin_pincode": {
+            "type": "string",
+            "nullable": true
+          },
+          "breakin_city": {
+            "type": "string",
+            "nullable": true
+          },
+          "breakin_state": {
+            "type": "string",
+            "nullable": true
+          },
+          "breakin_creation_time": {
+            "type": "string",
+            "nullable": true
+          },
+          "breakin_clear_inspection_status": {
+            "type": "string",
+            "nullable": true
+          },
+          "vrn": {
+            "type": "string",
+            "nullable": true
+          },
+          "ias_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "refund_status": {
+            "type": "string",
+            "nullable": true
+          },
+          "refund_proposal_number": {
+            "type": "string",
+            "nullable": true
+          },
+          "pf_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "artemis_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "reverse_sync_url": {
+            "type": "string",
+            "nullable": true
+          },
+          "is_nstp_flow": {
+            "type": "string",
+            "nullable": true
+          },
+          "business_vertical": {
+            "type": "string",
+            "nullable": true
+          },
+          "sub_vertical": {
+            "type": "string",
+            "nullable": true
+          },
+          "marketing_officer": {
+            "type": "string",
+            "nullable": true
+          },
+          "proposer_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "channel_application_details": {
+            "type": "string",
+            "nullable": true
+          },
+          "journey_type": {
+            "type": "string",
+            "nullable": true
+          },
+          "proposal_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "proposal_type": {
+            "type": "string",
+            "nullable": true
+          },
+          "pg_name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RetryResyncGetPortingUpdateReq": {
+        "type": "object",
+        "properties": {
+          "trace_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "proposal_number": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RevokeMandateReq": {
+        "type": "object",
+        "properties": {
+          "mandate_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "application_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "transaction_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "trace_id": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SendPaymentLinkReq": {
+        "required": [
+          "id"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "paymentMethod": {
+            "pattern": "^[SWE](\\|[SWE])*$",
+            "type": "string",
+            "nullable": true
+          },
+          "whatsappMobileNumber": {
+            "pattern": "^\\d{1,19}$",
+            "type": "string",
+            "nullable": true
+          },
+          "mobileNumber": {
+            "pattern": "^\\d{1,19}$",
+            "type": "string",
+            "nullable": true
+          },
+          "emailId": {
+            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+            "type": "string",
+            "nullable": true
+          },
+          "alternateEmailId": {
+            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+            "type": "string",
+            "nullable": true
+          },
+          "product": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SendPolicyMailReq": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "id": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SessionReq": {
+        "required": [
+          "id",
+          "payment_mode"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "payment_mode": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TagProposalReq": {
+        "required": [
+          "traceID",
+          "transactionID"
+        ],
+        "type": "object",
+        "properties": {
+          "traceID": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "transactionID": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "payerType": {
+            "pattern": "^(?i)(I|C)$",
+            "type": "string",
+            "nullable": true
+          },
+          "proposalList": {
+            "$ref": "#/components/schemas/ProposalList"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TagProposalReqv2": {
+        "required": [
+          "transactionID"
+        ],
+        "type": "object",
+        "properties": {
+          "transactionID": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "proposalList": {
+            "$ref": "#/components/schemas/ProposalListv2"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ToggleTemplateStatusReq": {
+        "required": [
+          "isActive",
+          "templateId"
+        ],
+        "type": "object",
+        "properties": {
+          "templateId": {
+            "maximum": 2147483647,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "isActive": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TransactionSummaryReq": {
+        "required": [
+          "email",
+          "input_key",
+          "input_value"
+        ],
+        "type": "object",
+        "properties": {
+          "input_key": {
+            "minLength": 1,
+            "pattern": "^(?i)(TRANSACTION_ID|PROPOSAL_NUMBER)$",
+            "type": "string"
+          },
+          "input_value": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "email": {
+            "minLength": 1,
+            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TriggerWizRequest": {
+        "type": "object",
+        "properties": {
+          "policyno": {
+            "type": "string",
+            "nullable": true
+          },
+          "srtName": {
+            "type": "string",
+            "nullable": true
+          },
+          "subSRTName": {
+            "type": "string",
+            "nullable": true
+          },
+          "source_System": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "emiDetails": {
+        "type": "object",
+        "properties": {
+          "installment_amount": {
+            "type": "string",
+            "nullable": true
+          },
+          "installment_number": {
+            "type": "string",
+            "nullable": true
+          },
+          "prev_transaction_id": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
